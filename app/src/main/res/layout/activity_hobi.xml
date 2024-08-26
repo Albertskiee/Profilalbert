@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Hobi"
+    android:padding="16dp"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/aboveSectionImage"
+        android:layout_width="126dp"
+        android:layout_height="135dp"
+        android:contentDescription="Image di atas section title"
+        android:src="@drawable/hobi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/sectionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hobi dan Kesukaan"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/aboveSectionImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp" />
+
+
+    <TextView
+        android:id="@+id/hobiFutsal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hobi: Bermain Futsal (1-3 kali seminggu)"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/sectionTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Suka Menonton Sepak Bola -->
+    <TextView
+        android:id="@+id/sukaSepakBola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suka menonton pertandingan sepak bola"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/hobiFutsal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+
+    <ImageView
+        android:id="@+id/fcBarcelonaLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/fcb"
+        app:layout_constraintTop_toBottomOf="@id/sukaSepakBola"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/timFavorit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tim Favorit: FC Barcelona"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/fcBarcelonaLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+
+    <ImageView
+        android:id="@+id/messiImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/messi"
+        app:layout_constraintTop_toBottomOf="@id/timFavorit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/pemainFavorit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pemain Favorit: Lionel Messi"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/messiImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+
+    <TextView
+        android:id="@+id/hobiMusik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hobi: Mendengarkan Musik"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/pemainFavorit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+
+    <TextView
+        android:id="@+id/musisiFavorit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Musisi Favorit: Michael Learn To Rock"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/hobiMusik"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+
+    <TextView
+        android:id="@+id/pengalamanMenyedihkan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Pengalaman Menyedihkan: Kehilangan Alm. Bapak pada 3 Mei 2024"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/musisiFavorit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

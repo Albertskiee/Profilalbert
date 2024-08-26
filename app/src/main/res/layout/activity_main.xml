@@ -7,83 +7,92 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+
+    <!-- Profile ImageView -->
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="425dp"
-        android:layout_height="393dp"
+        android:layout_width="422dp"
+        android:layout_height="390dp"
         app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
-        app:src="@drawable/ui"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="-87dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ui" />
+
+    <!-- TextView di bawah ImageView4 -->
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="208dp"
-        android:layout_height="187dp"
-        android:src="@tools:sample/avatars"
-        tools:layout_editor_absoluteX="101dp"
-        tools:layout_editor_absoluteY="45dp"
-        tools:src="@drawable/mui"
-        tools:ignore="MissingConstraints" />
+        android:layout_height="208dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.86"
+        app:srcCompat="@drawable/mui" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="246dp"
-        android:layout_height="46dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
-        android:text="HI!! I'M ALBERT RAMADHAN MANIK    "
         android:textStyle="italic"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="101dp"
-        tools:layout_editor_absoluteY="232dp" />
-
-    <Button
-        android:id="@+id/btn1"
-        android:layout_width="310dp"
-        android:layout_height="61dp"
-        android:text="BIODATA"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="307dp" />
-
-    <Button
-        android:id="@+id/btn2"
-        android:layout_width="310dp"
-        android:layout_height="61dp"
-        android:text="PENDIDIKAN"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="566dp" />
-
-    <Button
-        android:id="@+id/btn3"
-        android:layout_width="310dp"
-        android:layout_height="61dp"
-        android:text="HOBI"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="481dp" />
-
-    <Button
-        android:id="@+id/btn4"
-        android:layout_width="310dp"
-        android:layout_height="61dp"
-        android:text="KESUKAAN"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="391dp"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="425dp"
-        android:layout_height="393dp"
-        android:rotation="180"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
+        android:text="HI!! I'M ALBERT RAMADHAN MANIK"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn2"
-        app:srcCompat="@drawable/ui"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Button PROFIL -->
+    <Button
+        android:id="@+id/btnprofil"
+        android:layout_width="310dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="24dp"
+        android:text="PROFIL"
+        app:layout_constraintTop_toBottomOf="@id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Button AKADEMIK -->
+    <Button
+        android:id="@+id/btnakad"
+        android:layout_width="310dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="16dp"
+        android:text="AKADEMIK"
+        app:layout_constraintTop_toBottomOf="@id/btnprofil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Button HOBI dan KESUKAAN -->
+    <Button
+        android:id="@+id/btnhobi"
+        android:layout_width="310dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="16dp"
+        android:text="HOBI dan KESUKAAN"
+        app:layout_constraintTop_toBottomOf="@id/btnakad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Button CONTACT -->
+    <Button
+        android:id="@+id/btncontact"
+        android:layout_width="310dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="16dp"
+        android:text="CONTACT"
+        app:layout_constraintTop_toBottomOf="@id/btnhobi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

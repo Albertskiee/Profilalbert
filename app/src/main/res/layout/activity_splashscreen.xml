@@ -8,8 +8,7 @@
     android:background="@color/cardview_dark_background"
     tools:context=".Splashscreen">
 
-    <!-- ProgressBar -->
-
+    <!-- TextView -->
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -19,10 +18,12 @@
         android:textColor="#054DC6"
         android:textSize="34sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="426dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar2" />
 
+    <!-- ImageView -->
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="166dp"
@@ -30,19 +31,20 @@
         android:layout_marginTop="172dp"
         android:contentDescription="Logo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:src="@drawable/logo" />
+        app:srcCompat="@drawable/logo" />
 
-
+    <!-- ProgressBar -->
     <ProgressBar
         android:id="@+id/progressBar2"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="359dp"
         android:layout_height="32dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="596dp" />
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="50dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

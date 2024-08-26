@@ -13,6 +13,18 @@
         android:theme="@style/Theme.AlbertPsik23c"
         tools:targetApi="31">
         <activity
+            android:name=".Contact"
+            android:exported="false" />
+        <activity
+            android:name=".Hobi"
+            android:exported="false" />
+        <activity
+            android:name=".Akademik"
+            android:exported="false" />
+        <activity
+            android:name=".Profil"
+            android:exported="false" />
+        <activity
             android:name=".Splashscreen"
             android:exported="false" />
         <activity
